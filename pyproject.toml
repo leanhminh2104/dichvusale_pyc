@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "dichvusale-pyc"
+version = "0.1.0"
+description = "Import hook and utilities to import .pyc files and compile .py -> .pyc"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "LAMDev / dichvusale.io.vn", email = "support@dichvusale.io.vn"}]
+keywords = ["pyc", "import", "bytecode", "compiler"]
+classifiers = [
+"Programming Language :: Python :: 3",
+"License :: OSI Approved :: MIT License",
+"Operating System :: OS Independent",
+]
+
+
+[project.scripts]
+dichvusale-pyc = "dichvusale_pyc.cli:main"
